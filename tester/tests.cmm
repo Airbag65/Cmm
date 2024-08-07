@@ -1,0 +1,14 @@
+void codeGoBrrrrrrrrrrrrrrrrrrrrrrrrrr(){
+    if((2 < 1 + 2) && (2**3**2 > 100))
+    {
+        print("EYO de knas mannen de funkar");
+        print(True);
+    }
+    else{
+        print(False);
+    }
+
+    print("Siffra:");
+    int var = input();
+    print(var);
+}

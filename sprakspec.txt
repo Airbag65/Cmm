@@ -1,0 +1,95 @@
+Anton Norman (antno464) & Oliver Brandett (olibr699)
+
+Språkspecifikation C--
+---------------------------------
+* OOP
+* Statisk Typning
+* Relativt strikt syntax
+* {} används för block
+* Semikolon kan användas men måste inte
+* Import/Include/require funktionalitet
+* Främst ägnat till CLI applikationer
+	* Kanske GUI stöd (i mån om tid)
+* filändelse = .cmm
+
+Vår primära tanke är att skapa ett objektorienterat språk, som tar alla de bästa delarna från olika språk vi använt tidigare. Sråket ska innehålla alla åtkommst nivåer (public, private, protected). Iochmed att 'protected' finns med, ska vi även implementera arv i språket. 
+
+Vårt språk ska vara statiskt typat, dvs att användaren måste specifiera vilken datatyp en variabel ska ha innan den kan använda. 
+
+Språket ska som sagt, vara OOP men inte fullkomligt. De primitiva datatyperna ska inte vara objekt, men dock ha tillhörande inbyggdra metoder. Däremot kommer alla databehållare och dylikt ska vara inbyggda, men de ska vara objekt och beté sig mer som objekt än de primitiva datatyperna.
+
+Vårt språk är främst tänkt att vara ett General Purpose språk som ska användas till CLI applikationer. för att sriva små enkla scripts. Vi har dock planer att framöver, eventuellt, implementera någon form av GUI bibliotek, om tid till detta finns över när vi är klara med grunder. 
+
+Scope i språket kommer fungera snarlikt till hur det fungerar i C++. Det känns som det mest intuitiva sättet att hantera det, och enkelt att arbeta med. 
+
+Språk exempel:
+---------------------------------
+int x = 10
+int y = 11;
+intf add(int num1, int num2) {
+	int sum = num1 + num2;
+	ret sum;
+}
+
+voidf print(){
+	CLI.printing(add(x, y))
+}
+
+print()
+
+
+class TestClass{
+    public constructor(int a, int b){
+		this.var_1 = a;
+		this.var_2 = b
+    }
+
+    private int var_1;
+    public int var_2;
+    
+    public void print_1(){
+		CLI.printing(var_1);
+    }
+}
+
+TestClass tc = TestClass(1, 2);
+
+if (x < y) {
+	int c = 10;
+	while (i > 1) {
+		tc.print_1();
+		c--;
+	}
+}
+
+
+---------------------------------
+
+BNF:
+
+<variable> ::= <type> <name> '=' <thing>
+			| <type> <name> '=' <expr>
+				
+<func> ::= <ftype> <name> '(' <params> ')' 
+
+<params> ::= <param>
+			| <param> <params>
+
+<class> ::= 'class' <name> 
+
+<statement> ::= 'if' <expr <op> <expr>
+				| 'if' <thing> <op> <thing>
+				| 'if' <expr>
+
+<loop> ::= 'while' <expr>
+			| 'while' <expr <op> <expr>
+			| 'while' <thing> <op> <thing>
+
+<op> ::= '=' | '!=' | '<' | ...
+<thing> ::= <object> | <primitive>
+
+<CLI> ::= 'CLI.' <CLIMethod>
+
+<CLIMethod> ::= <printing> | 'read' | ...
+
+<printing> ::= 'printing' '(' <params> ')'

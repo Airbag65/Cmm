@@ -1,0 +1,25 @@
+{
+  "name": "cmm",
+  "displayName": "CMM",
+  "description": "C-- Programming Language",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.88.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "cmm",
+      "aliases": ["C-- Programming Language", "cmm"],
+      "extensions": [".cmm"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "cmm",
+      "scopeName": "source.cmm",
+      "path": "./syntaxes/cmm.tmLanguage.json"
+    }]
+  }
+}

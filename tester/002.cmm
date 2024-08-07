@@ -1,0 +1,26 @@
+# TDP002 labb 1 skriven i C--
+
+int sums(){
+    int sum = 0;
+    for(int i = 1; i <= 512; i++){
+        sum += i;
+    }
+    return sum;
+}
+
+int product(){
+    int prod = 1;
+    for(int i = 1; i <= 512; i++){
+        prod *= i;
+    }
+    return prod;
+}
+
+
+void codeGoBrrrrrrrrrrr(){
+    print("Summan av alla tal upp till 512:");
+    print(sums());
+    print();
+    print("Produkten av alla tal upp till 512:");
+    print(product());
+}

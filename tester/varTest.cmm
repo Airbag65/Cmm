@@ -1,0 +1,91 @@
+void codeGoBrrrrrrrrrrr(){
+    string fel = "FEL!!!";
+    int x = 1;
+    if(x == 1){
+        print("test 1: rätt");
+    } 
+    else{
+        print(fel);
+    }
+    
+    if(x + 1 == 2){
+        print("test 2: rätt");
+    }
+    else {
+        print(fel);
+    }
+    
+    float y = 1.1;
+    if(y == 1.1){
+        print("test 3: rätt");
+    }
+    else{
+        print(fel);
+    }
+    
+    bool b = True;
+    if(b){
+        print("test 4: rätt");
+    }
+    else{
+        print(fel);
+    }
+
+    string s = "rätt";
+    if(s == "rätt"){
+        print("test 5: rätt");
+    }
+    else {
+        print(fel);
+    }
+    
+    int t = 10;
+    t = 11;
+    if(t == 11){
+        print("test 6: rätt");
+    } 
+    else{
+        print(fel);
+    }
+    
+    int w = 9;
+    if(w + t == 20){
+        print("test 7: rätt");
+    }
+    else{
+        print(fel);
+    }
+
+    w += 11;
+    if(w == 20){
+        print("test 8: rätt");
+    }
+    else {
+        print(fel); 
+    }
+
+    w /= 10;
+    if(w == 2){
+        print("test 9: rätt");
+    }
+    else {
+        print(fel);
+    }
+
+    w *= 5;
+    string correct = "test 10: rätt";
+    if(w == 10){
+        print(correct);
+    }
+    else {
+        print(fel);
+    }
+
+    w **= 2;
+    if (w == 100){
+        print("test 11: rätt");
+    }
+    else {
+        print(fel);
+    }
+}

@@ -1,0 +1,7 @@
+require_relative './baseNodes'
+require_relative './functionNodes'
+require_relative './ifNodes'
+require_relative './loopNodes'
+require_relative './variableNodes'
+require_relative './linkedList'
+require_relative './arrayNodes'

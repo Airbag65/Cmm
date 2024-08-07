@@ -1,0 +1,85 @@
+int add(int a, int b){
+    return a+b;
+}
+
+int sums(){
+    int sum = 0;
+    for(int i = 1; i <= 512; i++){
+        sum += i;
+    }
+    return sum;
+}
+
+float check(float f){
+    if(f == 1.1){
+        return 2.2;
+    }
+    else{
+        return 3.3;
+    }
+}
+
+bool sant(bool s){
+    return s;
+}
+
+int rec(int n){
+    if(n == 1){
+        return 1;
+    }
+    else{
+        return n * rec(n-1);
+    }
+}
+
+// int fib(int n){
+//     if (n == 0){
+//         return 0;
+//     }
+//     if (n == 1){
+//         return 1;
+//     }
+//     return fib(n-1) + fib(n-2);
+// }
+
+void codeGoBrrrrrrrrrrr(){
+    string fel = "DUMMA JÄVEL DU SKREB FEL";
+    // print(fib(7));
+
+    if (add(1, 4) == 5){
+        print("test 1: rätt");
+    }
+    else {
+        print(fel);
+    }
+
+    // inspo: TDP002 - Imperativ Programmering (ft. Pontus)
+    if (sums() == 131328){
+        print("test 2: rätt");
+    }
+    else {
+        print(fel);
+    }
+
+    if(check(1.1) == 2.2){
+        print("test 3: rätt");
+    }
+    else{
+        print(fel);
+    }
+
+    if(sant(True)){
+        print("test 4: rätt");
+    }
+    else {
+        print(fel);
+    }
+
+    if(rec(7) == 5040)
+    {
+        print("test 5: rätt");
+    }
+    else {
+        print(fel);
+    }
+}

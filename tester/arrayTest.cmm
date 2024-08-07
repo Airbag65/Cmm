@@ -1,0 +1,66 @@
+void codeGoBrrrrrrrrrrrrrrrrrrrrrrrrrr(){
+    string fel = "FEL!!!";
+    array<int> a = [1,2,3,4,5];
+    if(a[2] == 3){
+        print("test 1: rätt");
+    }    
+    else{
+        print(fel);
+    }
+
+    a[0] = 10;
+    if(a[0] == 10){
+        print("test 2: rätt");
+    }
+    else{
+        print(fel);
+    }
+    
+    if(a.size() == 5){
+        print("test 3: rätt");
+    }
+    else{
+        print(fel);
+    }
+
+    a.pop();
+    if(a.size() == 4){
+        print("test 4: rätt");
+    }
+    else{
+        print(fel);
+    }
+    
+    a.append(100);
+    if(a[4] == 100){
+        print("test 5: rätt");
+    }
+    else{
+        print(fel);
+    }
+
+    array<int> b = [111,222,333];
+    a.conga(b);
+    if (a[6] == 222){
+        print("test 6: rätt");
+    }
+    else {
+        print(fel);
+    }
+    
+    array<string> c = ["testing", "tasting"];
+    if(c[0] == "testing"){
+        print("test 7: rätt");
+    }
+    else{
+        print(fel);
+    }
+    
+    array<float> f = [1.1, 2.2, 3.3];
+    if(f[2] == 3.3){
+        print("test 8: rätt");
+    }
+    else {
+        print(fel);
+    }
+}

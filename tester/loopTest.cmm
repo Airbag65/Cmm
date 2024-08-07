@@ -1,0 +1,72 @@
+void codeGoBrrrrrrrrrrr(){
+    string fel = "FEL!!!";
+    int x = 0;
+    for(int i = 0; i < 10; i++){
+        x += 1;
+    }
+    if(x == 10){
+        print("test 1: rätt");
+    }
+    else{
+        print(fel);
+    }
+    
+    int y = 0;
+    while(True){
+        if(y == 9){
+            break;
+        }
+        y++;
+    }
+    if(y == 9){
+        print("test 2: rätt");
+    }
+    else {
+        print(fel);
+    }
+
+    int q = 0;
+    int e = 0;
+    int i = 0;
+    while(q <= 3){
+        i = 0;
+        while(i < 10){
+            e++;
+            i++;
+        }
+        q++;
+    }
+
+    if(e == 40){
+        print("test 3: rätt");
+    }
+    else{
+        print(fel);
+    }
+    
+    q = 0;
+    e = 0;
+    // Lite seg
+    // Kör 44000 gånger
+    while(q <= 3){
+        for(int i = 0; i < 10; i++){
+            e++;
+            for(int j = 0; j < 10; j++){
+                e++;
+                for(int k = 0; k < 10; k++){
+                    e++;
+                    for(int elemenope = 0; elemenope < 10; elemenope++){
+                        e++;
+                    }
+                }
+            }
+        }
+        q++;
+    }
+    if(e == 44440){
+        print("test 4: rätt");
+    }
+    else {
+        print(fel);
+    }
+}
